@@ -3,8 +3,8 @@
 # которые должны быть распечатаны. Нумерация строк и столбцов идет с единицы (подумайте, почему не с нуля).
 # Примечание: бинарной операцией называется любая операция, у которой ровно два аргумента, как, например, у операции умножения.
 def printOperationTable(operation, numRows, numColumns):
-    a = [[operation(i, j) for i in range(1, numRows + 1)] for j in range(1, numColumns + 1)]
-    for i in a:
+    arr = [[operation(i, j) for i in range(1, numRows + 1)] for j in range(1, numColumns + 1)]
+    for i in arr:
         print(*[f'{x:>3}' for x in i])
 line = int(input('Введите количество строк: '))
 colums = int(input('Введите количество столбцов: '))

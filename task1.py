@@ -12,8 +12,6 @@ def rhythm(poem):
             if j in 'аеёиоуыэюя':
                 sumGlass += 1
         list1.append(sumGlass)
-    print(list1)
-    print(list1.count(list1[0]))
     return len(list1) == list1.count(list1[0])
 text = input('Введите стих: ')
 if rhythm(text):
